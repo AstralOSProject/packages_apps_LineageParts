@@ -641,7 +641,7 @@
     <string name="touchscreen_gesture_action_ambient_display">Show ambient display</string>
 
     <!-- Egg: Title for the easter egg activity -->
-    <string name="egg_title" translatable="false">AstralOS Easter Egg</string>
+    <string name="egg_title" translatable="false">LineageOS Easter Egg</string>
 
     <!-- Trust interface -->
     <string name="trust_title" translatable="false">@*lineageos.platform:string/trust_feature_name</string>
