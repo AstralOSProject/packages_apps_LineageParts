@@ -40,6 +40,7 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     private static final String STATUS_BAR_QUICK_QS_PULLDOWN = "qs_quick_pulldown";
 
     private static final int STATUS_BAR_BATTERY_STYLE_TEXT = 2;
+    private static final int STATUS_BAR_BATTERY_STYLE_HIDE = 3;
 
     private static final int PULLDOWN_DIR_NONE = 0;
     private static final int PULLDOWN_DIR_RIGHT = 1;
@@ -153,7 +154,8 @@ public class StatusBarSettings extends SettingsPreferenceFragment
     }
 
     private void enableStatusBarBatteryDependents(int batteryIconStyle) {
-        mStatusBarBatteryShowPercent.setEnabled(batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT);
+        mStatusBarBatteryShowPercent.setEnabled(batteryIconStyle != STATUS_BAR_BATTERY_STYLE_TEXT
+                && batteryIconStyle != STATUS_BAR_BATTERY_STYLE_HIDE);
     }
 
     private void updateQuickPulldownSummary(int value) {
