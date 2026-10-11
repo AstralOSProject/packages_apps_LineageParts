@@ -308,6 +308,7 @@
         <activity
             android:name=".logo.PlatLogoActivity"
             android:configChanges="orientation|keyboardHidden"
+            android:enabled="false"
             android:exported="true"
             android:theme="@style/EggStyle">
             <intent-filter>
@@ -318,6 +319,7 @@
 
         <activity
             android:name=".egg.octo.Ocquarium"
+            android:enabled="false"
             android:exported="true"
             android:label="@string/egg_title"
             android:theme="@style/EggStyle">
